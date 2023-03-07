@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+      <header></header>
+      <div class="todo_container">
+        <div class="todo_header">
+          <h1>TODO</h1>
+          <img src="images/icon-sun.svg" alt="">
+         
+        </div>
+        <div class="todo_input">
+          <span></span>
+          <input type="text" id="input" autofocus placeholder="Create a new todo...">
+        </div>
+        <ul class="todo_content">
+          <div class="tasksDiv"></div>
+          <li class="todo_footer">
+            <span class="item_left"></span>
+            <ul class="list">
+              <li class="active" onclick="allItem()">All</li>
+              <li onclick="active()">Active</li>
+              <li onclick="complete()">Completed</li>
+            </ul>
+            <span onclick="clearComplete()"> Clear Completed</span>
+          </li>
+        </ul>
+        <footer>
+          <p>Drag and drop to reorder list</p>
+        </footer>
+      </div>
+    </main>
+   
+  <script src="js/app.js"></script>
+</body>
+</html>

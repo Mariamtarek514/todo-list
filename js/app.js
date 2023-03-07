@@ -66,6 +66,7 @@ inputTask.addEventListener("keydown",(e)=>{
         //create task
         createToDo(inputTask.value);
         input.value="";
+        itemNumber();
     }
 });
 
@@ -129,14 +130,14 @@ function addtodoToPage(arrayOfTask){
         todoLi.id=task.id;
     
         let deleteTodo=document.createElement("img");
-        deleteTodo.setAttribute("src","../images/icon-cross.svg");
+        deleteTodo.setAttribute("src","images/icon-cross.svg");
         deleteTodo.setAttribute("alt","delete");
         deleteTodo.classList="remove-list";
     
        
         let checkTodoContainer=document.createElement("span");
         let checkTodo=document.createElement("img");
-        checkTodo.setAttribute("src","../images/icon-check.svg")
+        checkTodo.setAttribute("src","images/icon-check.svg")
         checkTodoContainer.append(checkTodo);
         checkTodoContainer.classList="check-list";
         checkTodo.classList="check-image";

@@ -23,7 +23,7 @@ function enableDark(){
     localStorage.setItem("theme","enable");
     document.body.classList.add("darkTheme");
     img.src="images/icon-moon.svg";
-        document.querySelector("header").style.cssText="Background-image:url('../images/bg-desktop-dark.jpg');background-repeat: no-repeat;background-size: cover;";
+        document.querySelector("header").style.cssText="Background-image:url('images/bg-desktop-dark.jpg');background-repeat: no-repeat;background-size: cover;";
 }
 window.onresize=function(){
     changeBg();
@@ -32,22 +32,22 @@ window.onload=changeBg;
 function changeBg(){
     if(innerWidth>570 ){
         if(localStorage.getItem("theme")=='enable'){
-            document.querySelector("header").style.cssText="Background-image:url('../images/bg-desktop-dark.jpg');background-repeat: no-repeat;background-size: cover;";
+            document.querySelector("header").style.cssText="Background-image:url('images/bg-desktop-dark.jpg');background-repeat: no-repeat;background-size: cover;";
         }else{
-            document.querySelector("header").style.cssText="Background-image:url('../images/bg-desktop-light.jpg');background-repeat: no-repeat;background-size: cover;"
+            document.querySelector("header").style.cssText="Background-image:url('images/bg-desktop-light.jpg');background-repeat: no-repeat;background-size: cover;"
         }
     }else{
         if(localStorage.getItem("theme")=='enable'){
-            document.querySelector("header").style.cssText="Background-image:url('../images/bg-mobile-dark.jpg');background-repeat: no-repeat;background-size: cover;";
+            document.querySelector("header").style.cssText="Background-image:url('images/bg-mobile-dark.jpg');background-repeat: no-repeat;background-size: cover;";
         }else{
-        document.querySelector("header").style.cssText="Background-image:url('../images/bg-mobile-light.jpg');background-repeat: no-repeat;background-size: cover;"
+        document.querySelector("header").style.cssText="Background-image:url('images/bg-mobile-light.jpg');background-repeat: no-repeat;background-size: cover;"
         }
     }
 }
 function disableDark(){
     localStorage.setItem("theme",null);
     img.src="images/icon-sun.svg";
-    document.querySelector("header").style.cssText="Background-image:url('../images/bg-desktop-light.jpg');background-repeat: no-repeat;background-size: cover;"
+    document.querySelector("header").style.cssText="Background-image:url('images/bg-desktop-light.jpg');background-repeat: no-repeat;background-size: cover;"
     document.body.classList.remove("darkTheme");
 }
 if(localStorage.getItem("theme")=='enable'){
